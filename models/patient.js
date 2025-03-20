@@ -28,7 +28,8 @@ const patientSchema  = new mongoose.Schema({
         }
     },
 
-    //! https://nour-karoui.medium.com/implementing-soft-delete-in-mongodb-with-mongoose-405c008d0e29
+    //! https://nour-karoui.medium.com/implementing-soft-delete-in-mongodb-with-mongoose-405c008d0e29 something to implement in the future. You have to install this
+    //!https://www.mongodb.com/docs/manual/core/index-unique/
     //* Saw this and wanted to try it out. It is a soft delete. The record remainds in the databse but is marked as deleted. The data is hidden from normal queries but can be restored if needed
     is_deleted: { type: Boolean, default: false }, // Soft delete flag
     deleted_at: { type: Date, default: null }, // Timestamp of deletion
